@@ -6,3 +6,4 @@
 - Ask before committing any changes
 - ran /memory command to confirm CLAUDE.md file loading as expected
 - ran /permissions which shows the custom rules I added to .claude/settings.json
+- There were no details regarding db details as these are not needed at this time
