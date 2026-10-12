@@ -16,7 +16,7 @@ A small Express REST API (users + health check) backed by an in-memory store. It
 - Use CommonJS (`require` / `module.exports`), not ES modules. ESLint is set to `sourceType: "script"`.
 - Write tests with `node:test`, `node:assert`, and `supertest` against the exported `app`. Do not use Jest or Mocha, and do not start a real server in tests.
 - Route handlers never touch data directly. All reads and writes go through functions exported from `db/store.js`; add a new store function when you need one.
-- Error responses use the shape `{ error: "<message>" }` with the right status code (400 for bad input, 404 for not found). Successful creates return 201.
+- Error responses use the shape `{ error: "<message>" }` with the right status code (400 for bad input, 404 for not found, 500 for server errors). Successful creates return 201 and successful standard requests 200.
 - Unused handler params named `req`, `res`, `next`, or `_` are allowed by the lint config. Other unused variables produce warnings.
 
 ## Architecture

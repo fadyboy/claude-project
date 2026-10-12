@@ -5,7 +5,8 @@
     ],
     "deny": [
       "Bash(rm:*)",
-      "Bash(git push --force:*)"
+      "Bash(git push --force:*)",
+      "Read(./.env)"
     ],
     "ask": [
       "Bash(git commit:*)"
