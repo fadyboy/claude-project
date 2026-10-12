@@ -1,6 +1,8 @@
 - Created the CLAUDE.md file using /init following the instructions described in README.md
 - Added references to a few more request status codes
 - Used /permissions to add rules to .claude/settings.json, deny reading .env files, deleting files, and force push to github
+- The deny rules added is to make sure Claude does not delete files, make sure it doesn't read .env files to prevent leaking of secrets, makes sure that no code is forced pushed to github
 - Allow running test commands commands 
 - Ask before committing any changes
 - ran /memory command to confirm CLAUDE.md file loading as expected
+- ran /permissions which shows the custom rules I added to .claude/settings.json
