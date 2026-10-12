@@ -3,3 +3,4 @@
 - Used /permissions to add rules to .claude/settings.json, deny reading .env files, deleting files, and force push to github
 - Allow running test commands commands 
 - Ask before committing any changes
+- ran /memory command to confirm CLAUDE.md file loading as expected
